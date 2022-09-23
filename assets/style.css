@@ -6,6 +6,7 @@ header {
     background-color: #35333a;
     color: #35333a;
     align-items: center;
+    justify-content:space-between;
 }
 
 header h1 {
@@ -16,24 +17,32 @@ header h1 {
     padding-right: 8px;
 }
 
+header nav {
+    width: 60%;
+
+}
+
 header nav ul {
     display: flex;
-    width: 100%;
-    margin-left: 50%;
+    width: 80%;
     list-style-type: none;  
 }
 
 header nav ul li {
-    width: 100%
+    display: flex;
+    width: 50%;
+    text-align: center;
 }
 a {
-    display: inline-flex;
+    display: flex;
     color:#73b3d3;
-    font-size: 12px;
-    padding-bottom: 5px;
+    font-size: 11px;
+    padding: 0 5px 5px 5px;
     line-height: 100%;
     text-decoration: none;
     /* text-decoration-line: underline;
     text-decoration-thickness: 2px; */
     border-bottom: 2px solid;
+    justify-content: center;
+
 }
