@@ -10,6 +10,23 @@ h2 {
     font-size: large;
 }
 
+h3 {
+    font-size:30px;
+    color: #475d69;
+}
+
+h4 {
+    color: #475d69
+}
+
+h5 {
+    color: #475d69
+}
+
+p {
+    font-size: 14px;
+    color: #475d69;
+}
 header {
     display: flex;
     background-color: #35333a;
@@ -29,13 +46,15 @@ header h1 {
 
 header nav {
     width: 60%;
+    position: absolute;
+    right: 20px;
 }
 
 header nav ul {
     display: flex;
-    width: 85%;
+    padding-right: 20px;
     list-style-type: none;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 header nav ul li {
@@ -51,8 +70,6 @@ a {
     padding: 0 5px 5px 5px;
     line-height: 100%;
     text-decoration: none;
-    /* text-decoration-line: underline;
-    text-decoration-thickness: 2px; */
     border-bottom: 2px solid;
     justify-content: center;
 
@@ -61,8 +78,6 @@ a {
 .container {
     position: relative;
     text-align: center;
-    color: white;
-    
 }
 
 .background-photo {
@@ -74,14 +89,74 @@ a {
     color:#35333a;
     position: absolute;
     bottom: 8px;
-    right: 16px;
+    right: 40px;
     padding: 8px;
-    
-  /* 
-    text-align: center;
-    width: 200px;
-    height: auto;
-    padding: 3px;*/
     background-color: #73b3d3; 
 }
 
+.row-container {
+    display:flex;
+    justify-content: left;
+    width: 100%;
+    height: 200px;
+}
+
+.row-container .left-side {
+    border-right:3px solid #475d69;
+    width: 30%;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.row-container .right-side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 100%;
+    margin: 8px;
+    height: 100%;
+}
+
+.right-side figure {
+    border: 3px solid #73b3d3;
+    width:fit-content;
+}
+/* 
+.right-side figure  { */
+figcaption {
+    color: #24363f;
+    background-color: #73b3d3;
+    position: absolute;
+    bottom: 8px;
+    left: 40px;
+}
+
+/* .about-me h3 {
+    width: 220px;
+    height: 200px;
+    margin: 4px;
+    border-right:3px solid #81aabe;
+    text-align:end;
+    padding: 20px 6px 20px 0px;
+}
+
+#about-me article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+} */ */
+
+/* .vertical-line {
+    border-left: 3px solid #35333a;
+    height: 100px;
+    position: absolute;
+    left: 25%;
+} */
+
+
+
+@media screen and 
+    
+}
