@@ -21,11 +21,7 @@ h3 {
     color: #50637f;
 }
 
-h4 {
-    color: #50637f
-}
-
-h5 {
+h4, h5 {
     color: #50637f
 }
 
@@ -46,13 +42,14 @@ header {
 header h1 {
     display: inline-block;
     background-color: #81aabe;
-    width: 280px;
+    min-width: 280px;
+
     text-align: end;
     padding-right: 8px;
 }
 
 header nav {
-    width: 60%;
+    min-width: 60%;
     position: absolute;
     right: 20px;
 }
@@ -65,12 +62,11 @@ header nav ul {
 }
 
 header nav ul li {
-    display: flex;
     width: auto;
     padding: 0 3px;
 }
 
-a {
+header nav ul li a {
     display: flex;
     color:#73b3d3;
     font-size: 14px;
@@ -81,12 +77,12 @@ a {
     justify-content: center;
 }
 /*  Subtitle section */
-.container {
+.hero-container {
     position: relative;
     text-align: center;
 }
 
-.background-photo {
+.background-image {
     max-height: 200px;
     width: 100%;
 }
@@ -100,68 +96,251 @@ a {
     background-color: #73b3d3; 
 }
 
-/* Portfolio content container sizing*/
+
+/* Main content container layout */
 
 .row-container {
-    display:flex;
+    display: flex;
     justify-content: left;
-    width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 .row-container .left-side {
-    display: flex;
+    display: inline-block;
     border-right: 3px solid #50637f;
-    width: 160px;
+    min-width: 268px;
     text-align: end;
     padding-right: 10px;
+    position: relative; */
+    /* overflow: hidden;
+    z-index: 1; */
 }
 
 .row-container .right-side {
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     flex-wrap: wrap;
+    justify-content:left;
+    align-items: start;
+    width: 50%;
+    /* margin-left: 18px; */
+}
+
+/* About Me section formatting */
+
+#about-me .right-side p {
+    margin-left: 38px;
+}
+
+
+
+/* Portfolio image thumbnails formatting */
+
+
+/* .row-container .right-side-row1 {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:left;
     align-items: start;
     width: 100%;
-    margin: 8px;
-}
-/* Work link images and placeholders */
-.right-side figure {
+    position: relative;
+    max-width: 600px;
+    z-index: 1; */
+    /* margin-left: 18px; */
+/* } 
+
+.row-container .right-side-row2 {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: start;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    z-index: 2; */
+    /* margin-left: 18px;*/
+
+ /* container for the images */
+    /* display: block;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: start;
+    max-width: 400px; */
+
+#thumbnails-row1 {
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    max-width: 400px;
+
+}
+
+#thumbnails-row1 li {
+    list-style-type: none;
+    
+}
+
+#thumbnails-row2 {
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    max-width: 400px;
+
+}
+
+#thumbnails-row2 li {
+    list-style-type: none;
+    
+}
+
+#thumbnails-row1 img {
     border: 3px solid #73b3d3;
-
+    position: relative;
+    max-width: 100%;
 }
 
-.horiseon {
-    width: 75%;
-    flex-grow: 1
+#thumbnails-row2 img {
+    border: 3px solid #73b3d3;
+    position: relative;
+    max-width: 100%;
 }
 
-.html-sheet {
-    width: 10%;
-    flex-grow: 2
+#thumbnails-row1 .horiseon {
+    display: block;
+    min-width: 400px;
+    margin: auto;
+    flex-shrink: 2
 }
 
-figcaption {
-    color: #24363f;
+
+#thumbnails-row2 .html-cheatsheet {
+    display: block;
+    min-width: 200px;
+    margin: auto;
+}
+
+#thumbnails-row2 .flexbox-cheatsheet {
+    display: block;
+    min-width: 200px;
+    margin: auto;
+}
+
+/* Thumbnail image labels */
+
+ .image-label {
     background-color: #73b3d3;
+    position: left;
+    margin-left: 40px;
+    margin-bottom: 80px;
+    width: 100px;;
+    /* align-self: flex-start; */
+    /* text-align: center; */
+    /* padding-right: 35px; */
     position: absolute;
-    bottom: 8px;
-    left: 40px;
+    bottom: 0;
+    left: 0;
 }
+    
+
+.image-label h4 {
+    color: #1d1b20;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.image-label p {
+    color: #1d1b20;
+    text-align: center;
+    margin-top: -10px;
+}
+
 
 /* Contact links */
 
-.right-side ul {
-    position: end;
+#contact-links {
+    display: flex;
     list-style-type: none;
+    flex-direction: row;
 }
 
-.right-side ul li {
-    display: inline-block;
-    /* width: fit-content; */
-    /* block-size: fit-content; */
-    padding: 0 23px 0 0;
-    
+#contact .right-side {
+    justify-content: space-between;
+}
+
+#contact-links li {
+    display: inline-flex;
+    padding: 0 23px 0 0; 
+}
+
+#contact-links li a {
+    color: #50637f;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 3px solid;
 } 
+
+/* media screen adjustment  */
+/* @media all and (max-width: 800px) {
+    .container 
+    .row-container {
+      justify-content:center;
+      flex-direction: column;
+      flex-wrap:wrap
+    }
+} */
+
+
+/* -------------------------------------------------- */
+
+/* Work section images and placeholders    */
+/* .right-side figure {
+    display: flex;
+    /* border: 3px solid #73b3d3; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 968px;
+}
+
+.horiseon {
+    width: 400px;
+    flex-grow: 1;
+    border: 3px solid #73b3d3;
+}
+
+.html-sheet {
+    width: 200px;
+    flex-grow: 2
+}
+
+.CSS-sheet {
+    width: 200px;
+    flex-grow: 2;
+}
+/* Work section image label
+
+figure .image-label {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #81aabe;
+    max-height: 30px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    bottom: 60px;
+    left: 40px; 
+    
+    
+    
+    position: relative;
+    top: 80px;
+    right: 15px;
+    font-weight: bold;
+    text-align: right;
+    font-size: 30px;*/
 
