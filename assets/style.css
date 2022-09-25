@@ -2,6 +2,12 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+/* Index
+- Header
+- Subtitle section
+- Content */
+
 :root {
     -- darkgrey: #353535;
 }
@@ -12,21 +18,22 @@ h2 {
 
 h3 {
     font-size:30px;
-    color: #475d69;
+    color: #50637f;
 }
 
 h4 {
-    color: #475d69
+    color: #50637f
 }
 
 h5 {
-    color: #475d69
+    color: #50637f
 }
 
 p {
     font-size: 14px;
-    color: #475d69;
+    color: #50637f
 }
+/* Header with nav links */
 header {
     display: flex;
     background-color: #35333a;
@@ -72,9 +79,8 @@ a {
     text-decoration: none;
     border-bottom: 2px solid;
     justify-content: center;
-
 }
-
+/*  Subtitle section */
 .container {
     position: relative;
     text-align: center;
@@ -94,16 +100,19 @@ a {
     background-color: #73b3d3; 
 }
 
+/* Portfolio content container sizing*/
+
 .row-container {
     display:flex;
     justify-content: left;
     width: 100%;
-    height: 200px;
+    height: 100%;
 }
 
 .row-container .left-side {
-    border-right:3px solid #475d69;
-    width: 30%;
+    display: flex;
+    border-right: 3px solid #50637f;
+    width: 160px;
     text-align: end;
     padding-right: 10px;
 }
@@ -115,15 +124,24 @@ a {
     align-items: start;
     width: 100%;
     margin: 8px;
-    height: 100%;
+}
+/* Work link images and placeholders */
+.right-side figure {
+    display: flex;
+    border: 3px solid #73b3d3;
+
 }
 
-.right-side figure {
-    border: 3px solid #73b3d3;
-    width:fit-content;
+.horiseon {
+    width: 75%;
+    flex-grow: 1
 }
-/* 
-.right-side figure  { */
+
+.html-sheet {
+    width: 10%;
+    flex-grow: 2
+}
+
 figcaption {
     color: #24363f;
     background-color: #73b3d3;
@@ -132,31 +150,18 @@ figcaption {
     left: 40px;
 }
 
-/* .about-me h3 {
-    width: 220px;
-    height: 200px;
-    margin: 4px;
-    border-right:3px solid #81aabe;
-    text-align:end;
-    padding: 20px 6px 20px 0px;
+/* Contact links */
+
+.right-side ul {
+    position: end;
+    list-style-type: none;
 }
 
-#about-me article {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    align-items: flex-start;
-} */ */
-
-/* .vertical-line {
-    border-left: 3px solid #35333a;
-    height: 100px;
-    position: absolute;
-    left: 25%;
-} */
-
-
-
-@media screen and 
+.right-side ul li {
+    display: inline-block;
+    /* width: fit-content; */
+    /* block-size: fit-content; */
+    padding: 0 23px 0 0;
     
-}
+} 
+
