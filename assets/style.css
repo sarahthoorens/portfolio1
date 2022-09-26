@@ -1,5 +1,7 @@
 * {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightgray;
+    text-decoration: none;
 }
 
 
@@ -49,6 +51,7 @@ header h1 {
 }
 
 header nav {
+    background-color: transparent;
     min-width: 60%;
     position: absolute;
     right: 20px;
@@ -56,12 +59,14 @@ header nav {
 
 header nav ul {
     display: flex;
+    background-color: transparent;
     padding-right: 20px;
     list-style-type: none;
     justify-content: flex-end;
 }
 
 header nav ul li {
+    background-color:transparent;
     width: auto;
     padding: 0 3px;
 }
@@ -69,6 +74,7 @@ header nav ul li {
 header nav ul li a {
     display: flex;
     color:#73b3d3;
+    background-color: transparent;
     font-size: 14px;
     padding: 0 5px 5px 5px;
     line-height: 100%;
@@ -111,9 +117,7 @@ header nav ul li a {
     min-width: 268px;
     text-align: end;
     padding-right: 10px;
-    position: relative; */
-    /* overflow: hidden;
-    z-index: 1; */
+    position: relative; 
 }
 
 .row-container .right-side {
@@ -122,80 +126,44 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content:left;
     align-items: start;
-    width: 50%;
-    /* margin-left: 18px; */
 }
 
 /* About Me section formatting */
 
-#about-me .right-side p {
-    margin-left: 38px;
+#about-me .right-side {
+    display: inline-flex;
+    flex-direction: row;
+    align-items:flex-start;
+
 }
 
+#about-me .right-side p {
+    float: right;
+    margin: 0 15px 0;
+    background-color: transparent;
+   
+}
 
+#about-me .right-side img {
+    margin-left: 38px;
+    max-width: 200px;
+    float: left;
+}
 
 /* Portfolio image thumbnails formatting */
 
 
-/* .row-container .right-side-row1 {
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    justify-content:left;
-    align-items: start;
-    width: 100%;
-    position: relative;
-    max-width: 600px;
-    z-index: 1; */
-    /* margin-left: 18px; */
-/* } 
-
-.row-container .right-side-row2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content:left;
-    align-items: start;
-    width: 100%;
-    max-width: 600px;
-    position: relative;
-    z-index: 2; */
-    /* margin-left: 18px;*/
-
- /* container for the images */
-    /* display: block;
-    flex-direction:column;
-    flex-wrap: wrap;
-    justify-content:left;
-    align-items: start;
-    max-width: 400px; */
-
 #thumbnails-row1 {
-    display: block;
+    display: flex;
     position: relative;
-    margin: 0px;
-    padding: 0px;
-    max-width: 400px;
+    margin-left: 0px;
+    padding: 3px;
 
 }
 
 #thumbnails-row1 li {
     list-style-type: none;
-    
-}
 
-#thumbnails-row2 {
-    display: block;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    max-width: 400px;
-
-}
-
-#thumbnails-row2 li {
-    list-style-type: none;
-    
 }
 
 #thumbnails-row1 img {
@@ -204,59 +172,49 @@ header nav ul li a {
     max-width: 100%;
 }
 
+
+#thumbnails-row2 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 0px;
+}
+
+#thumbnails-row2 ul {
+    padding-left: 0px;
+}
+
+#thumbnails-row2 li {
+    list-style-type: none;
+    
+}
+
 #thumbnails-row2 img {
     border: 3px solid #73b3d3;
     position: relative;
     max-width: 100%;
-}
-
-#thumbnails-row1 .horiseon {
     display: block;
-    min-width: 400px;
-    margin: auto;
-    flex-shrink: 2
-}
-
-
-#thumbnails-row2 .html-cheatsheet {
-    display: block;
-    min-width: 200px;
+    max-width:426px;
     margin: auto;
 }
 
-#thumbnails-row2 .flexbox-cheatsheet {
-    display: block;
-    min-width: 200px;
-    margin: auto;
+/* Thumbnail image labels*/
+
+figcaption {
+    background-color:#81aabe;
+    border: 1px solid #81aabe;
+    max-width: 80px;
+    padding: 1px;
+    margin-top: -100px;
+    position:relative;
 }
 
-/* Thumbnail image labels */
-
- .image-label {
-    background-color: #73b3d3;
-    position: left;
-    margin-left: 40px;
-    margin-bottom: 80px;
-    width: 100px;;
-    /* align-self: flex-start; */
-    /* text-align: center; */
-    /* padding-right: 35px; */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-    
-
-.image-label h4 {
-    color: #1d1b20;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.image-label p {
-    color: #1d1b20;
-    text-align: center;
-    margin-top: -10px;
+figcaption h4, p {
+    background-color:#81aabe;
+    text-decoration: none;
+    line-height: 1px;
 }
 
 
@@ -344,3 +302,71 @@ figure .image-label {
     text-align: right;
     font-size: 30px;*/
 
+
+
+/* .row-container .right-side-row1 {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: start;
+    width: 100%;
+    position: relative;
+    max-width: 600px;
+    z-index: 1; */
+    /* margin-left: 18px; */
+/* } 
+
+.row-container .right-side-row2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: start;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    z-index: 2; */
+    /* margin-left: 18px;*/
+
+ /* container for the images */
+    /* display: block;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: start;
+    max-width: 400px; */
+
+     /* #work .right-side figcaption {
+    background-color: #73b3d3;
+    margin-left: 40px;
+    margin-bottom: 80px;
+    width: 12%;; */
+    /* align-self: flex-start; */
+    /* text-align: center; */
+    /* padding-right: 35px; */
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+img figcaption h4 {
+    color: #1d1b20;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bolder;
+} */
+
+/* img figcaption p {
+    color: #1d1b20;
+    background-color: transparent;
+    text-align: center;
+    margin-top: -10px;
+}
+*/
+/* #thumbnails-row1 .horiseon {
+    display: block;
+    max-width: 920px;
+    margin: auto;
+} */
