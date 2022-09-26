@@ -13,11 +13,13 @@
 
 h2 {
     font-size: large;
+    background-color: transparent;
 }
 
 h3 {
     font-size:30px;
     color: var(--darkblue);
+    background-color: transparent;
 }
 
 h4, h5 {
@@ -45,12 +47,12 @@ header h1 {
     display: inline-block;
     background-color: var(--brightblue);
     min-width: 280px;
-
     text-align: end;
     padding-right: 8px;
 }
 
 header nav {
+    display: inline-block;
     background-color: transparent;
     min-width: 60%;
     position: absolute;
@@ -84,6 +86,7 @@ header nav ul li a {
 }
 /*  Subtitle hero section */
 .hero-container {
+    display: flex;
     position: relative;
     text-align: center;
 }
@@ -253,4 +256,48 @@ figcaption p {
     text-decoration: none;
     border-bottom: 3px solid;
 } 
+
+/* Responsive media */
+
+@media screen and (max-width: 575px) {
+    header {
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    header nav, .hero-container {
+      display: none;
+      }
+
+    .row-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row-container .left-side {
+        background-color: #35333a;
+        text-align: center;
+    }
+    #about-me .right-side {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #work .right-side {
+        flex-direction: column;
+        align-items:  center;
+        flex-wrap: wrap;
+    }
+
+    #project-row2, #about-me .right-side img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+#contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
 
