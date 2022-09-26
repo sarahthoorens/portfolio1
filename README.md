@@ -1,8 +1,8 @@
 # portfolio1
 
 Deployment date: 9/26/22</br>
-Deployed address: ([https://sarahthoorens.github.io/portfolio1/])</br>
-Topics applied: Flexbox, image overlays, responsive code </br>
+Deployed address: https://sarahthoorens.github.io/portfolio1/</br>
+Topics applied: Flexbox, image overlays, responsive code, HTML page layout with containers</br>
 Project goal: Recreate a pre-existing portfolio page using my personal information
 
 ## Project Description
@@ -42,5 +42,14 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 #### Responsive version
 
-<img src="/assets/images/smallsize.png" alt="small-size page rendering>
+<img src="/assets/images/smallsize.png" alt="small-size page rendering">
 
+**Challenges**
+
+I'm still learning how to approach HTML and CSS projects like this, ie those with a specified layout to match. I realized I started this project without responsiveness in mind, and when it came time to address that part of the acceptance criteria, I was limited with how I could make those modifications with my existing code. In the end, I had to scrap my nav links when reaching 568px to accomodate for my lack of foresight.
+
+I also struggled with how to organize my containers that allowed automatic size adjustments; I eventually settled on using percentages to help with width and height adjustments, although I'm still unsure if that was the best method to apply. 
+
+**Lessons learned**
+
+I see some area of improvement by incorporating a very specific wireframing to map my containers, including wireframing responsive versions to assist with planning out HTML when resized. It's clear I need more practice with manipulating flexboxes and organizing HTML containers. These are areas of focus for me going forward while learning CSS. 
