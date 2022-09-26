@@ -3,7 +3,7 @@
     background-color: lightgray;
     text-decoration: none;
 }
-
+/* Overall formatting */
 :root {
     --darkgrey: #35333a;
     --darkblue: #50637f;
@@ -50,6 +50,7 @@ header h1 {
     text-align: end;
     padding-right: 8px;
 }
+    /* Navbar */
 
 header nav {
     display: inline-block;
@@ -85,6 +86,7 @@ header nav ul li a {
     justify-content: center;
 }
 /*  Subtitle hero section */
+
 .hero-container {
     display: flex;
     position: relative;
@@ -104,7 +106,6 @@ header nav ul li a {
     padding: 8px;
     background-color: var(--warmblue); 
 }
-
 
 /* Main content container layout */
 
@@ -154,7 +155,7 @@ header nav ul li a {
     text-align: justify; 
 } 
 
-/* Project image formatting */
+/* Work section project image formatting */
 
 #project-row1 {
     display: flex;
@@ -233,7 +234,6 @@ figcaption p {
     line-height: 0px;
 }
 
-
 /* Contact links */
 
 #contact-links {
@@ -298,7 +298,7 @@ figcaption p {
         align-items: center;
     }
 
-#contact-links {
+    #contact-links {
         flex-direction: column;
         align-items: center;
     }
