@@ -133,22 +133,26 @@ header nav ul li a {
 #about-me .right-side {
     display: inline-flex;
     flex-direction: row;
-    align-items:flex-start;
+    align-items: center;
+    justify-content: start;
 
-}
-
-#about-me .right-side p {
-    float: right;
-    margin: 0 15px 0;
-    background-color: transparent;
-   
 }
 
 #about-me .right-side img {
     margin-left: 38px;
     max-width: 200px;
-    float: left;
+    flex-direction: row;
 }
+
+#about-me .right-side p {
+    margin: 0 15px 0;
+    background-color: transparent; 
+    width: 60%;
+    text-align: justify;
+   
+} 
+
+
 
 /* Portfolio image thumbnails formatting */
 
@@ -211,7 +215,7 @@ figcaption {
     position:relative;
 }
 
-figcaption h4, p {
+figcaption h4 p {
     background-color:#81aabe;
     text-decoration: none;
     line-height: 1px;
