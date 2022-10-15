@@ -221,17 +221,19 @@ header nav ul li a {
 /* Project figcaption formatting */
 
 figcaption {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color:var(--brightblue);
-    max-width: 80px;
+    max-width: fit-content;
+    max-height: fit-content;
+    min-height: fit-content;
     padding: 1px;
     margin-top: -100px;
     position:relative;
 }
 figcaption h4 {
-    line-height: 0px;
-}
-figcaption p {
-    line-height: 0px;
+    line-height: 18px;
 }
 
 /* Contact links */
