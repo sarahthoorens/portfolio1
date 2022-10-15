@@ -224,13 +224,13 @@ figcaption {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:var(--brightblue);
+    background-color:rgba(129,170, 190, 0.92);
     max-width: fit-content;
-    max-height: fit-content;
-    min-height: fit-content;
+    min-width: fit-content;
     padding: 1px;
     margin-top: -100px;
     position:relative;
+    padding-right: 12px;
 }
 figcaption h4 {
     line-height: 18px;
